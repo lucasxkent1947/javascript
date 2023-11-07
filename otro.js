@@ -27,7 +27,7 @@ miClub = "Morón"; */
 //INICIALIZAR
 let apellido = "Rodriguez";
 
-const miBarrio = "Viejo Urbano";
+const miDNI = 10000000;
 
 
 let numeroA = 1;
