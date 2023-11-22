@@ -368,16 +368,17 @@ conParametros("Hola", "Chicos");
 conParametros("Hola", "Chicas"); */
 
 //DECLARANDO LA VARIABLE PARA GUARDAR EL RESULTADO DE LA SUMA
-let resultado = 0
+/* let resultado = 0 */
 
 //FUNCION QUE SUMA DOS NUMEROS Y DA UN RESULTADO
-function sumar(numero1, numero2){
+/* function sumar(numero1, numero2){
     resultado = numero1 + numero2
 }
+ */
 
 
 // PODEMOS CREAR UNA FUNCION QUE MUESTRE EL ALERT DEL RESULTADO
-
+/* 
 function mostrar(mensaje){
     alert(mensaje)
 }
@@ -387,3 +388,330 @@ sumar(6,9);
 mostrar(resultado)
 
 
+
+ */
+
+/* function sumar (primerNumero, segundoNumero){
+    return primerNumero + segundoNumero;
+}
+
+let resultado = sumar (5,8);
+
+alert(resultado) */
+
+/* 
+function calculadora (primerNumero, segundoNumero, operacion){
+    switch(operacion){
+        case "+":
+            return primerNumero + segundoNumero;
+            break;
+        case "-":
+            return primerNumero - segundoNumero;
+            break;
+        case "*":
+            return primerNumero * segundoNumero;
+            break;
+        case "/":
+            return primerNumero / segundoNumero;
+            break;
+        default:
+            return 0;
+            break;
+    }
+}
+alert(calculadora(10,5, "+"))
+
+ */
+
+/* let resultado = 0
+function sumar(primerNumero, segundoNumero){
+    resultado = primerNumero + segundoNumero;
+}
+
+sumar(5,6);
+
+alert(resultado); */
+
+
+/* function sumar(primerNumero, segundoNumero){
+    let resultado = primerNumero + segundoNumero;
+}
+
+sumar(5,6);
+
+alert(resultado);
+ */
+
+
+//FUNCION ANONIMA
+/* const suma = function (a,b) { return a + b}
+const resta = function (a,b) { return a - b}
+
+alert(suma(15,20));
+alert(resta(15,5));
+
+ */
+
+//FUNCION FLECHA
+/* 
+const suma = (a,b) => {return a+b}
+
+const resta = (a,b) => a-b;
+
+alert(suma(15,20))
+alert(resta(20,10))
+ */
+
+
+/* const suma = (a,b) => a+b;
+const resta = (a,b) => a-b;
+
+//si una funcion es una sola linea con retorno y un parametro puede evitar escribir los ().
+
+const iva = x => x * 0.21;
+
+let precioProducto = 1000;
+let descuento = 50;
+
+// Calcular el precioProducto +IVA - descuento
+let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento)
+
+alert(nuevoPrecio)
+ */
+
+
+
+
+
+//OBJETO - ANATOMIA
+/* let nombre = "Lucas";
+let edad = 30;
+let calle = "Casullo 123";
+
+const persona1 = { 
+    nombre: "Lucas", 
+    edad: "30", 
+    calle: "Casullo 123"
+}
+
+/* alert(persona1.edad)
+
+alert(persona1["calle"])
+
+alert(persona1["nombre"] = "Roberto") */
+
+/* 
+function Persona(nombre, edad, calle){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.calle = calle;
+}
+
+const persona1 = new Persona("Lucas", 30, "Casullo")
+
+const persona2 = new Persona("Carla", 29, "Rivadavia")
+
+alert(persona2.calle)
+ */
+
+
+/* let cadena = "HOLA CHICOS"; */
+//propiedad de objeto de string 
+/* alert(cadena.length)
+
+alert(cadena.toLowerCase()); */
+
+
+/* function Persona(nombre, edad, calle){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.calle = calle;
+    this.hablar = function(){alert("Hola, me llamo" + this.nombre)}
+}
+
+const persona1 = new Persona("Lucas", 30, "Casullo")
+const persona2 = new Persona("Carla", 29, "Rivadavia")
+
+persona1.hablar();
+
+ */
+
+//OPERADOR IN & FOR IN
+
+
+/* const persona1 = { 
+    nombre: "Lucas", 
+    edad: "30", 
+    calle: "Casullo 123"
+}
+
+alert("apellido" in persona1)
+
+for (const propiedad in persona1){
+    alert(persona1[propiedad])
+}
+ */
+
+
+/* class Persona{
+    constructor(nombre, edad, calle){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.calle = calle;
+    }
+
+    hablar(){
+        alert("Hola, me llamo" + this.nombre)
+    }
+}
+
+const persona1 = new Persona("Lucas", 30, "La roche");
+persona1.hablar();
+ */
+
+
+/* class Producto{
+    constructor (nombre, precio){
+        this.nombre = nombre;
+        this.precio = parseFloat(precio);
+        this.vendido = false
+    }
+    sumaIva(){
+        this.precio = this.precio *1.21;
+    }
+    vender(){
+        this.vendido = true;
+    }
+}
+
+const producto1 = new Producto("arroz", "600");
+const producto2 = new Producto("fideos", "850");
+
+producto1.sumaIva();
+producto2.sumaIva();
+producto1.vender(); */
+
+
+
+
+//ARRAY
+
+/* const array1 = [];
+const array2 = [1,2]
+const array3 = ["Hola", 3, true, false]
+
+
+const numeros = [1,2,3,4,5,6] */
+
+/* for (let index = 0; index <5; index++){
+    alert(numeros[index])
+}
+
+/*  */
+/* alert(numeros[0])
+
+let resultado = numeros[0] + numeros[5]
+alert(resultado) */
+
+
+
+/* const miArray = ["nombre", 10, "apellido"];
+//agrega un elemento al final
+miArray.push("otro elemento")
+//agrega un elemento al principio
+miArray.unshift("primer elemento")
+
+alert(miArray)
+//elimina un elemento el ultimo
+miArray.pop()
+
+alert(miArray)
+
+// elimina un elemento el primero
+miArray.shift()
+
+alert(miArray) */
+
+
+/* const nombres = ["lucas", "nicolas", "rodriguez", "minor", "ricardo"];
+
+alert(nombres)
+
+
+//permite eliminar uno o mas elementos, indicando entre parentesis dos parametros: el primero es el indice donde queremos empezar a eliminar, y el segundo es la cantidad de elementos a eliminar desde esa posicion.
+nombres.splice(1, 2)
+
+alert(nombres) */
+
+const nombres1 = ["lucas", "nicolas", "rodriguez", "minor", "ricardo"];
+//genera un string con todos los elementos del array separados por el valor que le pasamos en el parametro()
+/* alert(nombres1.join("*")) */
+
+
+/* const perros = ["dalmate", "doberman"]
+const gatos = ["persa"]
+
+const mascotas = perros.concat(gatos)
+alert(mascotas)
+ */
+
+const nombres2 = ["lucas", "nicolas", "rodriguez", "minor", "ricardo"];
+const nombres3 = nombres2.slice(1,3)
+/* alert(nombres3)
+
+
+alert(nombres2.indexOf("marcelo"))
+
+
+alert(nombres2.includes("sevenup")) */
+/* 
+nombres2.reverse()
+alert(nombres2) */
+
+/* const objeto1 = {id: 1, producto: "Arroz"};
+const array = [objeto1, {id: 2, producto: "Fideos"}];
+array.push({id: 3, producto: "Pan"})
+
+
+alert(array)
+ */
+
+
+/* const listaNombres = []; //Array vacio 
+let cantidad = 5;
+
+
+do{
+    let entrada = prompt("Ingresa un nombre");
+    listaNombres.push(entrada);
+    alert(listaNombres.length)
+}while(listaNombres.length != cantidad);
+
+//concatenar un nuevo array de dos elementos
+const nuevaLista = listaNombres.concat(["Ana", "Clara"]);
+
+alert(nuevaLista.join("\n"))
+ */
+
+
+let total = 0;
+for (let i=1; i<= 10; i++){
+    total += i
+}
+
+alert(total)
+
+
+
+alert(sumarRango(1,10))
+
+
+
+
+// FUNCIONES DE ORDEN SUPERIOR: FIND, FOR EACH, FILTER, SOME, MAP, REDUCE, SORT. 
+
+/// DOM
+
+// EVENTOS
+
+//STORAGE & JSON 
